@@ -1,0 +1,104 @@
+.container {
+  text-align: center;
+  margin-top: 60px;
+
+}
+body{
+    background: rgb(85,79,194);
+background: linear-gradient(90deg, rgba(85,79,194,1) 0%, rgba(194,92,163,1) 49%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+   --s: 0.1em;   /* the thickness of the line */
+  --c: #2c4bff; /* the color */
+    font-family: system-ui, sans-serif;
+  font-size: 5rem;
+  cursor: pointer;
+  color: #0000;
+  padding-bottom: var(--s);
+  background:
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+h1:hover {--_p: 100%}
+
+
+
+.board {
+  display: inline-block;
+  margin-top: 20px;
+  margin:center;
+   border-style: double;
+}
+
+.row {
+  clear: both;
+}
+
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
+  float: left;
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-10 {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+
+
